@@ -4,13 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function creaArrayNuovo(){
+function creaArrayNuovo(array){
     
     const newArray = [];
     
-    for(let i = 0; i < names.length; i++){
-        if(names[i].includes('A')){
-            newArray.push(names[i])
+    for(let i = 0; i < array.length; i++){
+        if(array[i].includes('A')){
+            newArray.push(array[i])
         }
     }
 
