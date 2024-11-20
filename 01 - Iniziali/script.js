@@ -2,11 +2,26 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
+
 // Dichiara la funzione qui.
 
+function createNewArray(array){
+    
+let newArray = []
 
+    for(let i = 0; i < array.length; i++){
+
+        newArray.push(array[i].at(0))
+    
+    }
+
+    return newArray;
+
+}
+    
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(createNewArray(names))
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
